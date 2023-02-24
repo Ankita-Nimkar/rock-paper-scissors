@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Rock, Paper, Scissors</title>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css-link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal hidden">
+      <div class="modal-content">
+        <h1>RULES</h1>
+        <p>paper beats rock</p>
+        <p>rock beats scissors</p>
+        <p>scissors beats paper</p>
+        <img class="closeBtn" src="images/icon-close.svg" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="scoreDiv">
+        <h1 class="heading heading-flex">
+          <span>ROCK </span>PAPER<span></span><span>SCISSORS</span>
+        </h1>
+        <div class="score-container">
+          <h4 class="score-container-heading">SCORE</h4>
+          <div class="score">0</div>
+        </div>
+      </div>
+
+      <div class="triangle">
+        <div class="bg-triangle">
+          <div class="tirangle-img paper" id="paper" data-paper="paper">
+            <img
+              src="images/icon-paper.svg"
+              data-paper="paper"
+              alt=""
+              id="paper"
+            />
+          </div>
+          <div class="tirangle-img rock" data-rock="rock" id="rock">
+            <img src="images/icon-rock.svg" data-rock="rock" alt="" id="rock" />
+          </div>
+          <div
+            class="tirangle-img scissors"
+            data-scissors="scissors"
+            id="scissors"
+          >
+            <img
+              src="images/icon-scissors.svg"
+              data-scissors="scissors"
+              alt=""
+              id="scissors"
+            />
+          </div>
+        </div>
+
+        <div class="game hidden">
+          <!-- <div>
+            <div class="game-img rock">
+              <img src="images/icon-rock.svg" alt="" />
+            </div>
+            <p>You Picked</p>
+          </div>
+
+          <div class=" desktop ">
+            <h1>YOU LOSE</h1>
+            <button class="play-again">PLAY AGAIN</button>
+          </div>
+
+          <div>
+            <div class="img-placeholder"></div>
+            <p>Computer picked</p>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="result">
+        <!-- <div>
+         <h1>YOU LOSE</h1>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>  -->
+      </div>
+
+      <div class="rulesButton">
+        <button>RULES</button>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
